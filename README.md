@@ -42,12 +42,15 @@ This source code contains these parts:
  - *es_based_detector.py* and *model_based_detector.py* contains all helper methods to label the physiological signals and calculate burdens
  - *es_based_analysis.py* and *model_based_analysis.py* is the whole analysis process for expert-system (ES) and model-based approaches respectively
 
-To run the code, 4 file paths have to be specified in the command line. They are:
- - 
-```py
->>> import mypackage
->>> mypackage.do_stuff()
-'Oh yeah!'
+To run the code, 4 file paths have to be specified as the command line arguments. They are: 
+ * 1st file path: raw physiological data for the expert annotated cases
+ * 2nd file path: annotation file, with exact timestamp of each annotation
+ * 3rd file path: patient list file, with PSH diagnosis (0 for negative, 1 for positive) and patient ids
+ * 4th file path: folder that contains all other patients physiology data
+
+Example to run the code (model-based approach): 
+```bash
+python model_based_analysis.py '#filepath1' '#filepath2' '#filepath3' '#filepath4'
 ```
 
 
