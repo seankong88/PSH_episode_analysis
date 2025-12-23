@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import os
 import glob
-import numpy as np
 import csv 
 import time
 
