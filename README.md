@@ -37,21 +37,30 @@ management of this challenging syndrome.
 
 ## 🚀 Usage
 
-*Show off what your software looks like in action! Try to limit it to one-liners if possible and don't delve into API specifics.*
+This source code contains these parts:
+ - *util* folder has all util and helper methods to process raw physiological files, and the helper methods for calculating precision and recall (Tatbul et al., 2018)
+ - *es_based_detector.py* and *model_based_detector.py* contains all helper methods to label the physiological signals and calculate burdens
+ - *es_based_analysis.py* and *model_based_analysis.py* is the whole analysis process for expert-system (ES) and model-based approaches respectively
 
-```py
->>> import mypackage
->>> mypackage.do_stuff()
-'Oh yeah!'
+To run the code, **4** file paths have to be specified as the command line arguments. They are: 
+ * 1st file path: raw physiological data for the expert annotated cases **(MAT format)**
+ * 2nd file path: annotation file, with exact timestamp of each annotation **(CSV format)**
+ * 3rd file path: patient list file, with PSH diagnosis (0 for negative, 1 for positive) and patient ids **(CSV format)**
+ * 4th file path: folder that contains all other patients physiology data **(MAT format)**
+
+Example to run the code (model-based approach): 
+```bash
+python model_based_analysis.py '#filepath1' '#filepath2' '#filepath3' '#filepath4'
 ```
-
+Each analysis run would generate:
+* A csv file with all labelled PSH events with exact time stamp on each case
+* A csv file with burden score per 12 hours (half day) on each case
 
 ## ⬇️ Installation
 
-Simple, understandable installation instructions!
-
+Before executing the code, make sure all required packages are installed by running:
 ```bash
-pip install my-package
+pip install -r requirements.txt
 ```
 
 And be sure to specify any other minimum requirements like Python versions or operating systems.
