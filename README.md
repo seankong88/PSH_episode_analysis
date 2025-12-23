@@ -31,7 +31,7 @@ management of this challenging syndrome.
 
 Xiangxiang Kong1,2, Lujie Karen Chen1, Sancharee Hom Chowdhurry1, Ryan B. Felix2, Shiming Yang2, Fu Peter Hu2, Neeraj Badjatia2, Jamie Erin Podell2
 
-Affiliations
+#### Affiliations
 1University of Maryland Baltimore County
 2University of Maryland School of Medicine
 
