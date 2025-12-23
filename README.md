@@ -20,8 +20,7 @@ and delays in recognition, monitoring, and management. The aim of this study was
 develop automated PSH detection and quantification tools that exclusively utilize
 bedside continuous vital sign data. Using a cohort of 221 critically ill acute TBI patients
 with at least 14 days of continuous vital sign data (of which 107 were clinically
-diagnosed with PSH) we developed two artificial intelligence-based
-episode detection methods including an expert system approach and a machine
+diagnosed with PSH) we developed two artificial intelligence-based episode detection methods including an expert system approach and a machine
 learning model approach. All three methods demonstrate initial face validity to
 delineate PSH cases from non-PSH TBI controls. Implementation of these methods as
 real-time clinical decision support tools could improve the standard monitoring and
