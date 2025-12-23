@@ -5,7 +5,7 @@ import numpy as np
 
 def es_based_main():
     # get raw vital HR (spo2r) from mat file
-    url1 = '/trend/1_trend.mat'
+    #url1 = '/trend/1_trend.mat'
     spo2r1 = psh_util.create_vital_from_url(url1, 'SPO2r')
 
     # get annotations (ground truth), label only from Auton viewer
