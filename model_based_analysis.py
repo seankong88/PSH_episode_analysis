@@ -57,6 +57,9 @@ def model_based_process(labelled_case, ground_truth_annotations, patients_list_f
                                                                    all_features=all_interval_features, vital_type='SPO2r', window_size=1200, 
                                                                    overlap=0.25, fileserver_path=fileserver_path)
     
+    all_patients_burden.to_csv('model_based_all_patients_burden_scores.csv', index=False)
+    patients_burden_14.to_csv('model_based_all_patients_burden_scores_14days.csv', index=False)
+    
 def main():
     print('Labelled Cases File Path: ', sys.argv[1])
     print('Ground Truth File Path: ', sys.argv[2])
