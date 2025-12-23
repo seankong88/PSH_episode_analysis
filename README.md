@@ -50,7 +50,7 @@ To run the code, **4** file paths have to be specified as the command line argum
 
 Example to run the code (model-based approach): 
 ```bash
-python model_based_analysis.py '#filepath1' '#filepath2' '#filepath3' '#filepath4'
+$ python model_based_analysis.py '#filepath1' '#filepath2' '#filepath3' '#filepath4'
 ```
 Each analysis run would generate:
 * A csv file with all labelled PSH events with exact time stamp on each case
@@ -60,16 +60,7 @@ Each analysis run would generate:
 
 Before executing the code, make sure all required packages are installed by running:
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
-And be sure to specify any other minimum requirements like Python versions or operating systems.
-
-*You may be inclined to add development instructions here, don't.*
-
-
-## 💭 Feedback and Contributing
-
-Add a link to the Discussions tab in your repo and invite users to open issues for bugs/feature requests.
-
-This is also a great place to invite others to contribute in any ways that make sense for your project. Point people to your DEVELOPMENT and/or CONTRIBUTING guides if you have them.
+Python requirement: 3.10 or higher
