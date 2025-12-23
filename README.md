@@ -1,6 +1,6 @@
 # PSH Episode Analysis
 
-This is the source code for paper: Computational frameworks for real-time detection of paroxysmal sympathetic hyperactivity among traumatic brain injury patients
+This is the source code for paper: Computational Frameworks for Real-Time Detection of Paroxysmal Sympathetic Hyperactivity among Traumatic Brain Injury Patients
 
 ## 🌟 Highlights
 
