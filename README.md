@@ -29,11 +29,11 @@ management of this challenging syndrome.
 
 ### ✍️ Authors
 
-Xiangxiang Kong1,2, Lujie Karen Chen1, Sancharee Hom Chowdhurry1, Ryan B. Felix2, Shiming Yang2, Fu Peter Hu2, Neeraj Badjatia2, Jamie Erin Podell2
+Xiangxiang Kong<sup>1,2</sup>, Lujie Karen Chen<sup>1</sup>, Sancharee Hom Chowdhurry<sup>1</sup>, Ryan B. Felix<sup>2</sup>, Shiming Yang<sup>2</sup>, Fu Peter Hu<sup>2</sup>, Neeraj Badjatia<sup>2</sup>, Jamie Erin Podell<sup>2</sup>
 
 #### Affiliations
-1University of Maryland Baltimore County
-2University of Maryland School of Medicine
+<sup>1</sup>University of Maryland Baltimore County
+<sup>2</sup>University of Maryland School of Medicine
 
 ## 🚀 Usage
 
