@@ -2,14 +2,17 @@ import util.psh_util as psh_util
 import es_based_detector as eb
 import pandas as pd
 import numpy as np
+import sys
 
-def es_based_main():
+def es_based_process(labelled_case, ground_truth_annotations, patients_list_file, fileserver_path):
     # get raw vital HR (spo2r) from mat file
     #url1 = '/trend/1_trend.mat'
+    url1 = labelled_case
     spo2r1 = psh_util.create_vital_from_url(url1, 'SPO2r')
 
     # get annotations (ground truth), label only from Auton viewer
-    ground_truth = pd.read_csv('/data/all_annotations_GT.csv')
+    #ground_truth = pd.read_csv('/data/all_annotations_GT.csv')
+    ground_truth = pd.read_csv(ground_truth_annotations)
     p1_annotations = ground_truth[ground_truth.project_id == 9]
 
     # all annotations, magic number = 1675827557.07 for converting timestamp from viewer to proper epoch
@@ -27,7 +30,7 @@ def es_based_main():
     feature_list = ['mean', 'std', 'var', 'min', 'max', 'median']
 
     # getting patient ids
-    patient_list = pd.read_csv('/data/PSHAMscores_deidentified.csv')
+    patient_list = pd.read_csv(patients_list_file)
     patient_ids = patient_list['pid'].unique()
 
     all_patient_meta = []
@@ -63,7 +66,7 @@ def es_based_main():
             Part I. create intervals
         '''
         # create the driver vital: SPO2r
-        url = '/Users/xiangxiangkong/Downloads/trend/'+str(pid)+'_trend.mat'
+        url = fileserver_path+str(pid)+'_trend.mat'
         cur_hr = psh_util.create_vital_from_url(url, 'SPO2r')
     
         # modify min rule
@@ -223,6 +226,12 @@ def es_based_main():
     final_pd_4.to_csv('updated_rule_all_patients_score_4hour_window.csv', index=False)
     print('complete!')
 
-if __name__ == "__main__":
+def main():
+    print('Labelled Cases File Path: ', sys.argv[1])
+    print('Ground Truth File Path: ', sys.argv[2])
+    print('All Patients List: ', sys.argv[3])
+    print('All Other Cases Path: ', sys.argv[4])
+    es_based_process(labelled_case=sys.argv[1], ground_truth_annotations=sys.argv[2], patients_list_file=sys.argv[3], fileserver_path=sys.argv[4])
 
-    es_based_main()
+if __name__ == "__main__":
+    main()

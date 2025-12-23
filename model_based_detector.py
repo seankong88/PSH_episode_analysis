@@ -148,7 +148,7 @@ SVM model based analysis
 2. Sliding window on other patients' vital, extract features
 3. Label each sliding window, combine results
 '''
-def compute_all_patients(all_patient_meta_pd, feature_list, all_features, vital_type, window_size, overlap):
+def compute_all_patients(all_patient_meta_pd, feature_list, all_features, vital_type, window_size, overlap, fileserver_path):
     all_pd = []
     all_burden = []
     
@@ -179,7 +179,7 @@ def compute_all_patients(all_patient_meta_pd, feature_list, all_features, vital_
         Part II. create intervals
         '''
         # create the driver vital: SPO2r
-        url = '/trend/'+str(pid)+'_trend.mat'
+        url = fileserver_path+str(pid)+'_trend.mat'
         cur_hr = psh_util.create_vital_from_url(url, vital_type)
         
         total_len = len(cur_hr)
@@ -254,7 +254,7 @@ def compute_all_patients(all_patient_meta_pd, feature_list, all_features, vital_
 '''
 SVM model based analysis for the first 14 days of hospital stay
 '''
-def compute_all_patients_14(all_patient_meta_pd, feature_list, all_features, vital_type, window_size, overlap):
+def compute_all_patients_14(all_patient_meta_pd, feature_list, all_features, vital_type, window_size, overlap, fileserver_path):
     all_pd = []
     all_burden = []
     
@@ -285,7 +285,7 @@ def compute_all_patients_14(all_patient_meta_pd, feature_list, all_features, vit
         Part II. create intervals
         '''
         # create the driver vital: SPO2r
-        url = '/trend/'+str(pid)+'_trend.mat'
+        url = fileserver_path+str(pid)+'_trend.mat'
         cur_hr = psh_util.create_vital_from_url(url, vital_type)
         
         initial_time = cur_hr.iloc[0]['time_epoch']
