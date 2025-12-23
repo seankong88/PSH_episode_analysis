@@ -29,8 +29,11 @@ management of this challenging syndrome.
 
 ### ✍️ Authors
 
-Mention who you are and link to your GitHub or organization's website.
+Xiangxiang Kong1,2, Lujie Karen Chen1, Sancharee Hom Chowdhurry1, Ryan B. Felix2, Shiming Yang2, Fu Peter Hu2, Neeraj Badjatia2, Jamie Erin Podell2
 
+Affiliations
+1University of Maryland Baltimore County
+2University of Maryland School of Medicine
 
 ## 🚀 Usage
 
