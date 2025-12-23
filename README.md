@@ -38,9 +38,12 @@ management of this challenging syndrome.
 ## 🚀 Usage
 
 This source code contains these parts:
- - util folder has all util and helper methods to process raw physiological files, and the helper methods for calculating precision and recall (Tatbul et al., 2018)
+ - *util* folder has all util and helper methods to process raw physiological files, and the helper methods for calculating precision and recall (Tatbul et al., 2018)
  - *es_based_detector.py* and *model_based_detector.py* contains all helper methods to label the physiological signals and calculate burdens
  - *es_based_analysis.py* and *model_based_analysis.py* is the whole analysis process for expert-system (ES) and model-based approaches respectively
+
+To run the code, 4 file paths have to be specified in the command line. They are:
+ - 
 ```py
 >>> import mypackage
 >>> mypackage.do_stuff()
