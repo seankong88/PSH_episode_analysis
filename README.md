@@ -4,9 +4,10 @@ This is the source code for paper: Computational Frameworks for Real-Time Detect
 
 ## 🌟 Highlights
 
-- Some functionality made easy!
-- This problem handled
-- etc.
+- This is the source code of our computational frameworks for modeling and detecting PSH using densely sampled physiological VS data collected from bedside monitors.
+- We explored two artificial intelligence (AI) methods utilizing annotated data to automatically detect PSH episodes from high resolution VS data:
+  * Manually derived expert system (ES) based approach
+  * Machine learning (ML) model approach
 
 
 ## ℹ️ Overview
