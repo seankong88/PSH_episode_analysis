@@ -64,3 +64,8 @@ $ pip install -r requirements.txt
 ```
 
 Python requirement: 3.10 or higher
+
+## 📖 References
+
+[1] Tatbul N, Lee TJ, Zdonik S, Alam M, Gottschlich J. Precision and Recall for Time Series. In: Advances in Neural Information Processing Systems [Internet]. Curran Associates, Inc.; 2018 [cited 2025 Jul 10]. Available from: https://papers.nips.cc/paper_files/paper/2018/hash/8f468c873a32bb0619eaeb2050ba45d1-Abstract.html 
+
